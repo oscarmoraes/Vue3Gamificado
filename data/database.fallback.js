@@ -1,0 +1,1059 @@
+// Fallback offline do banco de dados de Vue 3
+window.FALLBACK_DATABASE = {
+  "course": {
+    "title": "Trilha Vue.js 3 Completa — Do Básico à Composition API",
+    "subtitle": "Funil Gamificado de Aprendizado Interativo SENAI Dev",
+    "totalLessons": 35,
+    "totalXp": 4220,
+    "playlistUrl": "https://www.youtube.com/playlist?list=PLcoYAcR89n-qTYqfWTGxXMnAvCqY3JF8w"
+  },
+  "ranks": [
+    {
+      "level": 1,
+      "minXp": 0,
+      "title": "Dev Frontend Iniciante",
+      "badge": "🌱"
+    },
+    {
+      "level": 2,
+      "minXp": 800,
+      "title": "Praticante de Componentes & Diretivas",
+      "badge": "⚡"
+    },
+    {
+      "level": 3,
+      "minXp": 1800,
+      "title": "Arquiteto SPA & Rotas",
+      "badge": "🛠️"
+    },
+    {
+      "level": 4,
+      "minXp": 2800,
+      "title": "Especialista em Estado & Vuex",
+      "badge": "🚀"
+    },
+    {
+      "level": 5,
+      "minXp": 3800,
+      "title": "Mestre Vue 3 & Composition API SENAI",
+      "badge": "👑"
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "index": 1,
+      "title": "Introdução ao Vue.js 3",
+      "videoId": "9DRY-aNPta0",
+      "duration": "14:04",
+      "category": "Fundamentos",
+      "summary": "Visão geral do framework progressivo Vue.js 3, evolução em relação às versões anteriores, vantagens da arquitetura orientada a componentes e novidades da versão 3.",
+      "competency": "Compreensão da arquitetura de SPAs e do modelo conceitual do Vue.js 3.",
+      "xp": 100,
+      "badge": {
+        "id": "v3_welcome",
+        "name": "Boas-vindas ao Vue 3",
+        "icon": "🌱",
+        "description": "Conheceu o ecossistema e fundamentos do Vue 3"
+      },
+      "question": {
+        "text": "O que caracteriza o Vue.js como um framework progressivo?",
+        "options": [
+          "Pode ser adotado incrementalmente, desde uma biblioteca simples para enriquecer HTML até uma SPA complexa",
+          "Exige obrigatoriamente a reescrita total de qualquer projeto existente para funcionar",
+          "Funciona exclusivamente como um compilador backend em tempo de execução",
+          "Só pode ser utilizado acoplado a um banco de dados relacional específico"
+        ],
+        "correctIndex": 0,
+        "tip": "Pense na flexibilidade do Vue para ser usado tanto via tag <script> quanto com bundlers modernos.",
+        "explanation": "O Vue é classificado como progressivo porque sua camada central trata apenas da visualização, permitindo que você o adote de forma gradual conforme as necessidades do projeto crescem."
+      }
+    },
+    {
+      "id": 2,
+      "index": 2,
+      "title": "Instalação e Ambiente Vue 3",
+      "videoId": "G7lSV_tKruQ",
+      "duration": "17:00",
+      "category": "Setup & Ferramentas",
+      "summary": "Como iniciar projetos em Vue 3 utilizando as ferramentas modernas do ecossistema (Vite e Vue CLI), conhecendo os pacotes e a estrutura de pastas gerada.",
+      "competency": "Configuração de ambiente de desenvolvimento moderno com Node.js e ferramentas de bundling para Vue.",
+      "xp": 100,
+      "badge": {
+        "id": "v3_setup",
+        "name": "Setup Moderno",
+        "icon": "⚡",
+        "description": "Instalou e inicializou seu projeto Vue 3"
+      },
+      "question": {
+        "text": "Qual é a ferramenta de build e desenvolvimento recomendada atualmente pela equipe oficial do Vue pela sua extrema velocidade?",
+        "options": [
+          "Vite",
+          "Webpack 1.0 legado",
+          "Gulp",
+          "Grunt"
+        ],
+        "correctIndex": 0,
+        "tip": "Criada pelo próprio Evan You, seu nome significa rápido em francês.",
+        "explanation": "O Vite utiliza ES Modules nativos no navegador durante o desenvolvimento, oferecendo inicialização quase instantânea e Hot Module Replacement (HMR) ultrarrápido."
+      }
+    },
+    {
+      "id": 3,
+      "index": 3,
+      "title": "Single File Components (SFC)",
+      "videoId": "T3incqDttn0",
+      "duration": "11:34",
+      "category": "Componentes",
+      "summary": "Entendendo os Single File Components (.vue): a união harmônica entre template, script e style em um único arquivo modular e reutilizável.",
+      "competency": "Estruturação modular de interfaces utilizando a especificação de Single File Components (.vue).",
+      "xp": 100,
+      "badge": {
+        "id": "sfc_architect",
+        "name": "Arquiteto de SFC",
+        "icon": "🧩",
+        "description": "Dominou a anatomia dos arquivos .vue"
+      },
+      "question": {
+        "text": "Quais são as três seções fundamentais de um Single File Component (.vue)?",
+        "options": [
+          "<template>, <script> e <style>",
+          "<html/head>, <controller> e <css>",
+          "<view>, <logic> e <design>",
+          "<render>, <action> e <theme>"
+        ],
+        "correctIndex": 0,
+        "tip": "São as tags HTML canônicas que separam marcação, comportamento e estilização no Vue.",
+        "explanation": "Um arquivo .vue é estruturado nas tags <template> (marcação visual), <script> (lógica e dados) e <style> (regras de estilo locais ou globais)."
+      }
+    },
+    {
+      "id": 4,
+      "index": 4,
+      "title": "Diretivas Condicionais (v-if e v-show)",
+      "videoId": "Jh_usB2q-Gc",
+      "duration": "16:00",
+      "category": "Diretivas",
+      "summary": "Renderização condicional de elementos na interface utilizando v-if, v-else-if, v-else e v-show, compreendendo as diferenças de performance e funcionamento no DOM.",
+      "competency": "Controle eficiente de exibição de elementos no DOM baseado no estado da aplicação.",
+      "xp": 100,
+      "badge": {
+        "id": "conditional_master",
+        "name": "Mestre da Condicional",
+        "icon": "🔀",
+        "description": "Aplicou v-if e v-show com critério de performance"
+      },
+      "question": {
+        "text": "Qual a principal diferença técnica entre as diretivas v-if e v-show?",
+        "options": [
+          "v-if destrói e recria o elemento no DOM, enquanto v-show apenas alterna a propriedade CSS display: none",
+          "v-show só funciona com números e v-if só funciona com textos",
+          "v-if só aceita valores falsos e v-show só aceita valores verdadeiros",
+          "Não existe qualquer diferença técnica, ambas agem exatamente igual no DOM"
+        ],
+        "correctIndex": 0,
+        "tip": "Pense no custo de desmontar componentes inteiros versus apenas ocultá-los com CSS.",
+        "explanation": "v-if é uma renderização condicional real (monta/desmonta o nó do DOM), tendo custo maior em alternâncias frequentes. Já o v-show mantém o nó no DOM e alterna o CSS display."
+      }
+    },
+    {
+      "id": 5,
+      "index": 5,
+      "title": "Diretiva de Repetição (v-for)",
+      "videoId": "9avsYRfeYss",
+      "duration": "07:56",
+      "category": "Diretivas",
+      "summary": "Renderização dinâmica de coleções de dados, arrays e objetos no template com v-for, destacando a regra indispensável do atributo :key para otimização do Virtual DOM.",
+      "competency": "Iteração de listas de dados e manutenção da identidade de elementos no Virtual DOM com chaves únicas.",
+      "xp": 100,
+      "badge": {
+        "id": "loop_wizard",
+        "name": "Mago dos Loops",
+        "icon": "🔁",
+        "description": "Renderizou listas com v-for e chaves de integridade"
+      },
+      "question": {
+        "text": "Por que é altamente recomendado fornecer o atributo :key em elementos iterados com v-for?",
+        "options": [
+          "Para que o algoritmo do Virtual DOM identifique a identidade única de cada nó e otimize as atualizações de renderização",
+          "Para criptografar os dados da lista contra acesso indevido",
+          "Para converter automaticamente os arrays em objetos no banco de dados",
+          "Porque o navegador bloqueia a exibição de listas sem chaves primárias numéricas"
+        ],
+        "correctIndex": 0,
+        "tip": "O Virtual DOM precisa saber exatamente qual item mudou, foi adicionado ou removido.",
+        "explanation": "O atributo :key serve como uma dica para o Virtual DOM rastrear a identidade dos nós, permitindo reutilizar e reordenar elementos existentes com máxima performance."
+      }
+    },
+    {
+      "id": 6,
+      "index": 6,
+      "title": "Atributos Dinâmicos e Data Binding (v-bind)",
+      "videoId": "qTxsp6DVFas",
+      "duration": "08:02",
+      "category": "Data Binding",
+      "summary": "Associação de atributos HTML como src, href, disabled, id e title ao estado do componente através da diretiva v-bind e sua sintaxe abreviada ':'.",
+      "competency": "Vinculação reativa de propriedades HTML e atributos aos estados do modelo de dados.",
+      "xp": 100,
+      "badge": {
+        "id": "bind_expert",
+        "name": "Especialista em Binding",
+        "icon": "🔗",
+        "description": "Conectou atributos HTML ao estado reativo com v-bind"
+      },
+      "question": {
+        "text": "Qual é a sintaxe abreviada (shorthand) oficial para a diretiva v-bind:href='url'?",
+        "options": [
+          ":href='url'",
+          "@href='url'",
+          "#href='url'",
+          "$href='url'"
+        ],
+        "correctIndex": 0,
+        "tip": "O caractere de dois-pontos é o atalho universal do v-bind.",
+        "explanation": "No Vue, o prefixo ':' é o atalho direto para v-bind (ex: :href='url', :src='avatar', :disabled='isLoading')."
+      }
+    },
+    {
+      "id": 7,
+      "index": 7,
+      "title": "Classes e Estilos Dinâmicos",
+      "videoId": "oCxEXfsld-o",
+      "duration": "12:19",
+      "category": "Estilização",
+      "summary": "Manipulação reativa de classes CSS e estilos inline no Vue utilizando objetos, arrays e expressões booleanas (:class e :style).",
+      "competency": "Controle programático de classes e estilos CSS condicionados ao estado da aplicação.",
+      "xp": 100,
+      "badge": {
+        "id": "style_shaper",
+        "name": "Modelador Visual",
+        "icon": "🎨",
+        "description": "Aplicou classes e estilos dinâmicos com sintaxe de objeto"
+      },
+      "question": {
+        "text": "Na sintaxe de objeto :class=\"{ 'active': isActive, 'text-danger': hasError }\", quando a classe 'active' será aplicada?",
+        "options": [
+          "Apenas quando a propriedade isActive for avaliada como verdadeira (truthy)",
+          "Sempre, independentemente do valor de isActive",
+          "Apenas quando hasError for falso",
+          "Apenas após o clique do usuário no elemento"
+        ],
+        "correctIndex": 0,
+        "tip": "A chave do objeto é a classe CSS e o valor é a condição booleana.",
+        "explanation": "No formato de objeto de :class, a classe é aplicada se o valor correspondente for verdadeiro (truthy) e removida se for falso (falsy)."
+      }
+    },
+    {
+      "id": 8,
+      "index": 8,
+      "title": "Two-Way Data Binding (v-model)",
+      "videoId": "Ca98YxPOTzQ",
+      "duration": "10:40",
+      "category": "Formulários",
+      "summary": "Sincronização bidirecional entre campos de formulário (inputs, textareas, selects, checkboxes) e o estado do componente com v-model.",
+      "competency": "Criação de formulários reativos e sincronização em tempo real de dados de entrada do usuário.",
+      "xp": 110,
+      "badge": {
+        "id": "vmodel_master",
+        "name": "Mestre do v-model",
+        "icon": "📝",
+        "description": "Implementou formulários bidirecionais com v-model"
+      },
+      "question": {
+        "text": "O que a diretiva v-model realiza essencialmente sob os panos em um campo de texto?",
+        "options": [
+          "Combina a vinculação do valor (:value) com a escuta do evento de atualização (@input)",
+          "Executa uma requisição HTTP POST para uma API externa",
+          "Cria uma nova tabela no banco de dados local",
+          "Bloqueia a digitação de caracteres especiais"
+        ],
+        "correctIndex": 0,
+        "tip": "É um açúcar sintático que junta v-bind:value com v-on:input.",
+        "explanation": "v-model é um syntax sugar que une a passagem do dado atual via prop value com a escuta do evento input para atualizar a variável reativa."
+      }
+    },
+    {
+      "id": 9,
+      "index": 9,
+      "title": "Manipulação de Eventos (v-on)",
+      "videoId": "LivJkC5SzNc",
+      "duration": "12:59",
+      "category": "Eventos",
+      "summary": "Escuta de eventos do DOM com v-on (@), métodos de manipulador, passagem de parâmetros e modificadores de eventos (.prevent, .stop, .enter).",
+      "competency": "Captura e tratamento de interações do usuário com métodos e modificadores de eventos.",
+      "xp": 100,
+      "badge": {
+        "id": "event_handler",
+        "name": "Manipulador de Eventos",
+        "icon": "🎯",
+        "description": "Gerenciou eventos com @ e modificadores nativos"
+      },
+      "question": {
+        "text": "Qual modificador de evento do Vue substitui a chamada manual de event.preventDefault() em um formulário?",
+        "options": [
+          "@submit.prevent",
+          "@submit.stop",
+          "@submit.once",
+          "@submit.self"
+        ],
+        "correctIndex": 0,
+        "tip": "O nome do modificador reflete o próprio método preventDefault.",
+        "explanation": "Ao usar @submit.prevent='salvar', o Vue executa preventDefault() automaticamente antes de chamar a função salvar, evitando o recarregamento da página."
+      }
+    },
+    {
+      "id": 10,
+      "index": 10,
+      "title": "Propriedades Computadas (computed)",
+      "videoId": "aIYZVdpKlAk",
+      "duration": "15:00",
+      "category": "Reatividade",
+      "summary": "Criação de propriedades computadas para cálculos derivados de dados reativos, compreendendo o mecanismo de cache baseado em dependências.",
+      "competency": "Otimização de cálculos e formatações derivadas com cache inteligente via computed properties.",
+      "xp": 120,
+      "badge": {
+        "id": "computed_genius",
+        "name": "Gênio do Computed",
+        "icon": "🧠",
+        "description": "Aplicou cache eficiente com computed properties"
+      },
+      "question": {
+        "text": "Qual é a vantagem primária de uma computed property em relação a um método comum no template?",
+        "options": [
+          "A propriedade computada armazena o resultado em cache e só recalcula quando suas dependências reativas mudam",
+          "A propriedade computada executa fora do navegador em segundo plano",
+          "A propriedade computada não pode acessar as propriedades do data",
+          "A propriedade computada só pode retornar números inteiros"
+        ],
+        "correctIndex": 0,
+        "tip": "Pense em performance: se nenhuma variável dependente mudou, por que recalcular?",
+        "explanation": "Computed properties são cacheadas com base em suas dependências reativas. Múltiplos acessos retornam o valor em cache sem reexecutar a função até que alguma dependência mude."
+      }
+    },
+    {
+      "id": 11,
+      "index": 11,
+      "title": "Observadores (watch)",
+      "videoId": "HjD8UwyUgoc",
+      "duration": "12:11",
+      "category": "Reatividade",
+      "summary": "Utilização de watchers para reagir a alterações de dados, disparar efeitos colaterais, chamadas assíncronas (APIs) e opções como deep e immediate.",
+      "competency": "Monitoramento de mutações de estado e execução de efeitos colaterais assíncronos.",
+      "xp": 110,
+      "badge": {
+        "id": "watchful_eye",
+        "name": "Olhar Atento",
+        "icon": "👁️",
+        "description": "Monitorou alterações de estado com watchers"
+      },
+      "question": {
+        "text": "Quando é mais indicado utilizar um watcher (watch) em vez de uma computed property?",
+        "options": [
+          "Quando é necessário executar efeitos colaterais como requisições assíncronas ou persistência após a mudança de um dado",
+          "Apenas quando queremos fazer operações matemáticas simples",
+          "Quando queremos criar tags HTML personalizadas",
+          "Watchers são obsoletos e não devem ser utilizados"
+        ],
+        "correctIndex": 0,
+        "tip": "Computed serve para derivar novos valores; watch serve para reagir a mudanças realizando ações.",
+        "explanation": "O watch é ideal para efeitos colaterais (side effects), como fazer requisições a uma API, salvar dados no localStorage ou disparar animações quando um valor específico muda."
+      }
+    },
+    {
+      "id": 12,
+      "index": 12,
+      "title": "Ciclo de Vida dos Componentes",
+      "videoId": "ABCymBGlEdk",
+      "duration": "17:00",
+      "category": "Ciclo de Vida",
+      "summary": "Estudo aprofundado dos estágios de vida de um componente Vue: criação (created), montagem (mounted), atualização (updated) e destruição (unmounted).",
+      "competency": "Gerenciamento temporal de componentes e inicialização correta de recursos externos no DOM.",
+      "xp": 120,
+      "badge": {
+        "id": "lifecycle_pro",
+        "name": "Mestre do Ciclo de Vida",
+        "icon": "🔄",
+        "description": "Dominou os ganchos temporais do ciclo de vida"
+      },
+      "question": {
+        "text": "Em qual gancho (hook) do ciclo de vida é seguro acessar elementos do DOM ou instanciar bibliotecas visuais de terceiros?",
+        "options": [
+          "mounted (ou onMounted)",
+          "beforeCreate",
+          "created",
+          "beforeMount"
+        ],
+        "correctIndex": 0,
+        "tip": "O elemento só está fisicamente inserido na árvore do navegador após ser montado.",
+        "explanation": "O gancho mounted é disparado imediatamente após o componente ser renderizado e inserido no DOM real, sendo o momento ideal para interagir com o DOM ou APIs do navegador."
+      }
+    },
+    {
+      "id": 13,
+      "index": 13,
+      "title": "Componentes e Slots",
+      "videoId": "ptiRmVx2pGs",
+      "duration": "09:11",
+      "category": "Componentes",
+      "summary": "Distribuição e projeção de conteúdo em componentes filhos utilizando slots padrão, slots nomeados e scoped slots para máxima flexibilidade visual.",
+      "competency": "Criação de componentes genéricos reutilizáveis através da projeção de conteúdo com slots.",
+      "xp": 110,
+      "badge": {
+        "id": "slot_sculptor",
+        "name": "Escultor de Slots",
+        "icon": "📥",
+        "description": "Construiu componentes flexíveis com slots nomeados"
+      },
+      "question": {
+        "text": "Para que serve a tag <slot></slot> dentro do template de um componente filho?",
+        "options": [
+          "Funciona como um ponto de inserção para o conteúdo HTML passado pelo componente pai",
+          "Cria uma conexão WebSocket com o servidor",
+          "Define um campo de input com validação de senha",
+          "Gera um espaço reservado para imagens em formato SVG"
+        ],
+        "correctIndex": 0,
+        "tip": "Pense no slot como uma janela receptora de conteúdo externo.",
+        "explanation": "A tag <slot> atua como um marcador onde o conteúdo passado entre as tags de abertura e fechamento do componente pai será injetado."
+      }
+    },
+    {
+      "id": 14,
+      "index": 14,
+      "title": "CSS Scoped e Global",
+      "videoId": "cre_U9p-Dmk",
+      "duration": "08:23",
+      "category": "Estilização",
+      "summary": "Isolamento de estilos com a tag <style scoped>, atributos data-v-hash automáticos, coexistência com estilos globais e pseudo-seletor :deep().",
+      "competency": "Modularização e encapsulamento de estilos CSS em componentes evitando vazamento de regras.",
+      "xp": 100,
+      "badge": {
+        "id": "scoped_stylist",
+        "name": "Estilista Scoped",
+        "icon": "🛡️",
+        "description": "Encapsulou estilos CSS com a diretiva scoped"
+      },
+      "question": {
+        "text": "Como o Vue garante que estilos definidos em <style scoped> não vazem para outros componentes?",
+        "options": [
+          "Injetando atributos de dados únicos (ex: data-v-7ba5bd90) nos elementos do componente e nos seletores CSS",
+          "Criando um iframe isolado para cada componente na página",
+          "Bloqueando o carregamento de outros arquivos CSS externos",
+          "Convertendo todo o CSS em código JavaScript imperativo"
+        ],
+        "correctIndex": 0,
+        "tip": "O PostCSS pós-processa as regras adicionando atributos de dados com hashes.",
+        "explanation": "Com <style scoped>, o compilador do Vue adiciona um atributo de escopo único aos elementos do componente e reescreve os seletores CSS para mirar apenas nesse atributo."
+      }
+    },
+    {
+      "id": 15,
+      "index": 15,
+      "title": "Passagem de Dados via Props",
+      "videoId": "HCX8XFNutAY",
+      "duration": "17:00",
+      "category": "Comunicação",
+      "summary": "Comunicação unidirecional de dados do componente pai para o filho utilizando Props: declaração, tipagem, valores padrão (default) e validações.",
+      "competency": "Modelagem de interfaces desacopladas com contratos formais de entrada de dados via Props.",
+      "xp": 120,
+      "badge": {
+        "id": "props_provider",
+        "name": "Provedor de Props",
+        "icon": "📤",
+        "description": "Transferiu dados entre componentes com validação de props"
+      },
+      "question": {
+        "text": "O que significa o princípio do 'fluxo de dados unidirecional' (one-way data flow) em relação às props no Vue?",
+        "options": [
+          "O componente filho nunca deve mutar diretamente uma prop recebida do componente pai",
+          "As props só podem conter valores booleanos",
+          "O componente pai não pode enviar dados para múltiplos filhos",
+          "Os dados só podem fluir do banco de dados direto para o componente sem passar por rotas"
+        ],
+        "correctIndex": 0,
+        "tip": "Mutações devem fluir de quem é o dono do estado para evitar efeitos colaterais imprevisíveis.",
+        "explanation": "No fluxo unidirecional, o pai é o dono do dado. Se o filho precisa alterar algo, ele deve emitir um evento para que o pai faça a mutação, preservando a rastreabilidade do estado."
+      }
+    },
+    {
+      "id": 16,
+      "index": 16,
+      "title": "Comunicação Filho para Pai (emit)",
+      "videoId": "kVpHOh78-SM",
+      "duration": "06:51",
+      "category": "Comunicação",
+      "summary": "Emissão de eventos customizados do componente filho para o componente pai utilizando $emit (ou defineEmits), transportando payloads de dados de volta na hierarquia.",
+      "competency": "Implementação do padrão de eventos customizados para notificar componentes ascendentes sobre ações do usuário.",
+      "xp": 110,
+      "badge": {
+        "id": "event_emitter",
+        "name": "Emissor de Eventos",
+        "icon": "📢",
+        "description": "Enviou dados do filho para o pai usando $emit"
+      },
+      "question": {
+        "text": "Como o componente filho notifica o pai sobre uma ação (ex: 'salvar') passando um objeto de dados?",
+        "options": [
+          "this.$emit('salvar', dados)",
+          "this.$parent.salvar(dados)",
+          "window.postMessage('salvar', dados)",
+          "document.dispatchEvent('salvar', dados)"
+        ],
+        "correctIndex": 0,
+        "tip": "O método canônico do Vue para emitir eventos customizados se chama $emit.",
+        "explanation": "Através de this.$emit('nome-do-evento', payload), o filho despacha o evento, que pode ser escutado no pai com @nome-do-evento='metodoDoPai'."
+      }
+    },
+    {
+      "id": 17,
+      "index": 17,
+      "title": "Introdução ao Vue Router (Parte 1)",
+      "videoId": "TMzZDTFxOjw",
+      "duration": "11:11",
+      "category": "Roteamento SPA",
+      "summary": "Conceitos de Single Page Application sem recarregar a página, instalação do Vue Router 4, configuração de rotas básicas e uso de <router-link> e <router-view>.",
+      "competency": "Configuração da camada de navegação e roteamento de URLs em aplicações cliente no Vue 3.",
+      "xp": 120,
+      "badge": {
+        "id": "router_navigator",
+        "name": "Navegador de Rotas",
+        "icon": "🧭",
+        "description": "Configurou rotas SPA com Vue Router 4"
+      },
+      "question": {
+        "text": "Qual componente do Vue Router é responsável por exibir o componente correspondente à rota ativa no template?",
+        "options": [
+          "<router-view></router-view>",
+          "<router-link></router-link>",
+          "<route-container></route-container>",
+          "<view-port></view-port>"
+        ],
+        "correctIndex": 0,
+        "tip": "É a janela onde a página da rota atual é renderizada.",
+        "explanation": "<router-view> é o componente funcional que renderiza o componente associado ao caminho de URL correspondente na tabela de rotas."
+      }
+    },
+    {
+      "id": 18,
+      "index": 18,
+      "title": "Introdução ao Vue Router (Parte 2)",
+      "videoId": "znL_IDGNApU",
+      "duration": "09:50",
+      "category": "Roteamento SPA",
+      "summary": "Rotas dinâmicas com parâmetros de URL (:id), leitura de params e query strings, navegação programática com router.push() e rotas nomeadas.",
+      "competency": "Construção de rotas com parâmetros dinâmicos e navegação imperativa no Vue Router.",
+      "xp": 120,
+      "badge": {
+        "id": "dynamic_router",
+        "name": "Mestre dos Parâmetros",
+        "icon": "🗺️",
+        "description": "Implementou rotas dinâmicas e navegação programática"
+      },
+      "question": {
+        "text": "Como acessar o parâmetro dinâmico 'id' definido em uma rota como '/usuario/:id' dentro de um componente?",
+        "options": [
+          "$route.params.id (ou route.params.id no composable useRoute)",
+          "$route.query.id",
+          "$router.params.id",
+          "window.location.id"
+        ],
+        "correctIndex": 0,
+        "tip": "Parâmetros de segmento de rota ficam no objeto params do objeto de rota atual ($route).",
+        "explanation": "$route.params contém os parâmetros dinâmicos mapeados no path da rota, como :id, :slug ou :categoria."
+      }
+    },
+    {
+      "id": 19,
+      "index": 19,
+      "title": "Introdução ao Vuex (State)",
+      "videoId": "s1bWtzMKdO4",
+      "duration": "12:17",
+      "category": "Gerenciamento de Estado",
+      "summary": "Problemas de prop drilling em aplicações complexas, conceito de Single Source of Truth (única fonte da verdade) e definição do estado centralizado (state) no Vuex.",
+      "competency": "Centralização do estado global da aplicação para evitar acoplamento excessivo na árvore de componentes.",
+      "xp": 120,
+      "badge": {
+        "id": "vuex_initiator",
+        "name": "Iniciador do Vuex",
+        "icon": "🏦",
+        "description": "Centralizou o estado global em uma store Vuex"
+      },
+      "question": {
+        "text": "Qual problema arquitetural uma biblioteca de gerenciamento de estado como Vuex ou Pinia resolve prioritariamente?",
+        "options": [
+          "O 'Prop Drilling' e o compartilhamento complexo de dados entre componentes irmãos ou distantes na árvore",
+          "A lentidão na conexão com a internet",
+          "A incompatibilidade com CSS Flexbox e Grid",
+          "A necessidade de ter um servidor Node.js rodando"
+        ],
+        "correctIndex": 0,
+        "tip": "Evita ter que passar props por múltiplos níveis de componentes que nem usam aquele dado.",
+        "explanation": "Bibliotecas de store criam uma fonte única de verdade onde qualquer componente pode ler ou solicitar modificações de dados sem passar props por dezenas de nós intermediários."
+      }
+    },
+    {
+      "id": 20,
+      "index": 20,
+      "title": "Vuex: Mutations (Parte 1)",
+      "videoId": "aZLM4kLMl00",
+      "duration": "06:26",
+      "category": "Gerenciamento de Estado",
+      "summary": "O único meio oficial de alterar o estado em uma store Vuex: declaração de mutations síncronas e disparo com commit().",
+      "competency": "Modificação previsível e rastreável do estado global através de Mutations.",
+      "xp": 110,
+      "badge": {
+        "id": "mutation_starter",
+        "name": "Operador de Mutations",
+        "icon": "⚡",
+        "description": "Alterou estados da store com commit de mutations"
+      },
+      "question": {
+        "text": "Qual método da store do Vuex é utilizado para invocar uma mutation?",
+        "options": [
+          "store.commit('nomeDaMutation', payload)",
+          "store.dispatch('nomeDaMutation', payload)",
+          "store.mutate('nomeDaMutation')",
+          "store.apply('nomeDaMutation')"
+        ],
+        "correctIndex": 0,
+        "tip": "Mutations são disparadas com commit; actions são disparadas com dispatch.",
+        "explanation": "No Vuex, mutations são invocadas exclusivamente com store.commit('nomeDaMutation', payload) para garantir que as alterações sejam síncronas e rastreáveis."
+      }
+    },
+    {
+      "id": 21,
+      "index": 21,
+      "title": "Vuex: Mutations (Parte 2)",
+      "videoId": "oNUmgr6Ml4E",
+      "duration": "15:00",
+      "category": "Gerenciamento de Estado",
+      "summary": "Boas práticas ao escrever mutations: regras de sincronismo estrito, boas práticas para manipulação de objetos e integração com Vue Devtools para depuração temporal.",
+      "competency": "Depuração avançada com time-travel debugging e manutenção da integridade síncrona de mutações.",
+      "xp": 120,
+      "badge": {
+        "id": "sync_master",
+        "name": "Mestre do Sincronismo",
+        "icon": "⏱️",
+        "description": "Aplicou mutações síncronas com rastreabilidade no DevTools"
+      },
+      "question": {
+        "text": "Por que mutations no Vuex DEVEM ser rigorosamente síncronas?",
+        "options": [
+          "Para que as ferramentas de DevTools possam capturar instantâneos confiáveis antes e depois de cada mutação para depuração (time-travel)",
+          "Porque o JavaScript não permite código assíncrono em arquivos .js",
+          "Porque promessas gastam o dobro de memória RAM no navegador",
+          "Porque o navegador recarrega a página ao detectar chamadas assíncronas em mutations"
+        ],
+        "correctIndex": 0,
+        "tip": "Se uma mutation fosse assíncrona, o DevTools não saberia quando a alteração real ocorreu.",
+        "explanation": "O sincronismo das mutations garante previsibilidade: cada commit gera um estado snapshot imediato, possibilitando depuração por viagem no tempo (time-travel debugging)."
+      }
+    },
+    {
+      "id": 22,
+      "index": 22,
+      "title": "Vuex: Getters",
+      "videoId": "WGCWeD7CVyg",
+      "duration": "05:46",
+      "category": "Gerenciamento de Estado",
+      "summary": "Criação de propriedades computadas globais na store Vuex através de Getters, permitindo filtros e cálculos reutilizáveis em toda a aplicação.",
+      "competency": "Modelagem de dados derivados e filtros reutilizáveis a partir do estado da store.",
+      "xp": 110,
+      "badge": {
+        "id": "getter_guru",
+        "name": "Guru dos Getters",
+        "icon": "🔍",
+        "description": "Criou computadas globais cacheadas com Getters"
+      },
+      "question": {
+        "text": "Os Getters do Vuex funcionam de forma análoga a qual recurso dos componentes?",
+        "options": [
+          "Computed properties (propriedades computadas)",
+          "Methods (métodos)",
+          "Watchers (observadores)",
+          "Props (propriedades)"
+        ],
+        "correctIndex": 0,
+        "tip": "Getters calculam valores derivados do state e mantêm cache de resultado.",
+        "explanation": "Getters são equivalentes a computed properties da store: eles calculam dados derivados com base no state e são cacheados até que o state subjacente mude."
+      }
+    },
+    {
+      "id": 23,
+      "index": 23,
+      "title": "Vuex: Actions",
+      "videoId": "yofCg5H7eYM",
+      "duration": "11:58",
+      "category": "Gerenciamento de Estado",
+      "summary": "Gerenciamento de operações assíncronas, chamadas AJAX/fetch para APIs externas e commit condicional de mutations através de Actions.",
+      "competency": "Orquestração de fluxos assíncronos e consumo de APIs REST no ecossistema de store.",
+      "xp": 120,
+      "badge": {
+        "id": "action_architect",
+        "name": "Arquiteto de Actions",
+        "icon": "🚀",
+        "description": "Gerenciou fluxos assíncronos e chamadas de API com Actions"
+      },
+      "question": {
+        "text": "Como uma Action no Vuex é disparada a partir de um componente?",
+        "options": [
+          "store.dispatch('nomeDaAction', payload)",
+          "store.commit('nomeDaAction', payload)",
+          "store.trigger('nomeDaAction', payload)",
+          "store.call('nomeDaAction', payload)"
+        ],
+        "correctIndex": 0,
+        "tip": "Actions são despachadas através do método dispatch.",
+        "explanation": "store.dispatch('nomeDaAction') é a forma oficial de disparar actions, que podem retornar Promises e conter lógica assíncrona complexa."
+      }
+    },
+    {
+      "id": 24,
+      "index": 24,
+      "title": "Composition API: setup",
+      "videoId": "HimCoKMtm7o",
+      "duration": "14:36",
+      "category": "Composition API",
+      "summary": "O grande marco do Vue 3: introdução à Composition API, gancho de entrada setup(), organização de lógica por funcionalidade em vez de opções dispersas.",
+      "competency": "Transição arquitetural da Options API para a Composition API no Vue 3.",
+      "xp": 130,
+      "badge": {
+        "id": "composition_pioneer",
+        "name": "Pioneiro da Composition",
+        "icon": "💡",
+        "description": "Deu os primeiros passos com setup() e Composition API"
+      },
+      "question": {
+        "text": "Qual é a principal motivação para o surgimento da Composition API no Vue 3?",
+        "options": [
+          "Permitir o agrupamento de código relacionado à mesma funcionalidade lógica e facilitar o reuso em grandes componentes",
+          "Eliminar completamente o uso de HTML e CSS nas aplicações",
+          "Tornar o Vue compatível apenas com navegadores antigos",
+          "Substituir o JavaScript por uma linguagem proprietária"
+        ],
+        "correctIndex": 0,
+        "tip": "Na Options API, o código de uma funcionalidade ficava fragmentado entre data, methods e computed.",
+        "explanation": "A Composition API permite organizar e extrair o código baseado em objetivos e recursos lógicos, tornando projetos grandes muito mais manuteníveis e reutilizáveis via composables."
+      }
+    },
+    {
+      "id": 25,
+      "index": 25,
+      "title": "Composition API: Reatividade (ref & reactive)",
+      "videoId": "SCXZHopmtV0",
+      "duration": "09:58",
+      "category": "Composition API",
+      "summary": "Criação de variáveis reativas na Composition API utilizando os métodos nativos ref() e reactive(), entendendo o desempacotamento de .value e proxies do ES6.",
+      "competency": "Criação e controle de referências reativas primitivas e complexas com ref() e reactive().",
+      "xp": 130,
+      "badge": {
+        "id": "reactive_master",
+        "name": "Mestre da Reatividade",
+        "icon": "🔮",
+        "description": "Dominou os primitivos reativos ref() e reactive()"
+      },
+      "question": {
+        "text": "Como acessar e alterar o valor de uma variável criada com const contador = ref(0) dentro da tag script?",
+        "options": [
+          "contador.value = 1",
+          "contador = 1",
+          "contador.set(1)",
+          "contador() = 1"
+        ],
+        "correctIndex": 0,
+        "tip": "Objetos ref encapsulam o dado primitivo na propriedade .value.",
+        "explanation": "O ref() envelopa o valor em um objeto reativo acessível via .value no JavaScript. No template, o Vue realiza o unwrap automático, dispensando o .value."
+      }
+    },
+    {
+      "id": 26,
+      "index": 26,
+      "title": "Composition API: Computed e Watch",
+      "videoId": "3eEGzrZzqZM",
+      "duration": "07:11",
+      "category": "Composition API",
+      "summary": "Implementação de funções computadas (computed()) e observadores reativos (watch() e watchEffect()) dentro do novo paradigma da Composition API.",
+      "competency": "Construção de computadas e observadores desacoplados e componíveis.",
+      "xp": 130,
+      "badge": {
+        "id": "composition_reactivity",
+        "name": "Alquimista Reativo",
+        "icon": "🧪",
+        "description": "Utilizou computed() e watch() com Composition API"
+      },
+      "question": {
+        "text": "Como importar e criar uma computed property na Composition API?",
+        "options": [
+          "import { computed } from 'vue'; const dobro = computed(() => valor.value * 2);",
+          "import computed from 'vue-computed'; const dobro = new computed();",
+          "const dobro = this.$computed(() => valor * 2);",
+          "computed(dobro, function() { return valor * 2; })"
+        ],
+        "correctIndex": 0,
+        "tip": "Funções da Composition API são importadas diretamente do pacote vue.",
+        "explanation": "No Vue 3, computed() é uma função de primeira classe importada de vue que recebe um getter e retorna uma referência reativa somente leitura."
+      }
+    },
+    {
+      "id": 27,
+      "index": 27,
+      "title": "Composition API: Lifecycle Hooks",
+      "videoId": "qL4XMyCwRiM",
+      "duration": "06:03",
+      "category": "Composition API",
+      "summary": "Mapeamento dos ganchos de ciclo de vida na Composition API: onMounted, onUpdated, onUnmounted, e a substituição natural de created pelo próprio corpo do setup.",
+      "competency": "Uso de hooks de ciclo de vida importáveis na Composition API.",
+      "xp": 120,
+      "badge": {
+        "id": "hook_specialist",
+        "name": "Especialista em Hooks",
+        "icon": "🪝",
+        "description": "Aplicou hooks onMounted e onUnmounted no setup"
+      },
+      "question": {
+        "text": "O que substitui os antigos ganchos beforeCreate e created na Composition API do Vue 3?",
+        "options": [
+          "O próprio corpo da função setup() (ou do bloco script setup)",
+          "O hook onCreated()",
+          "O método onInit()",
+          "A função onBeforeMounted()"
+        ],
+        "correctIndex": 0,
+        "tip": "Qualquer código colocado direto no setup() roda exatamente no momento de criação.",
+        "explanation": "Como setup() é executado exatamente no momento de criação da instância do componente, qualquer código dentro dele já substitui beforeCreate e created."
+      }
+    },
+    {
+      "id": 28,
+      "index": 28,
+      "title": "Composition API: Props e Emits",
+      "videoId": "HhYY3cCfFlM",
+      "duration": "08:55",
+      "category": "Composition API",
+      "summary": "Como declarar e consumir Props e emitir eventos com defineProps e defineEmits na sintaxe limpa do <script setup>.",
+      "competency": "Comunicação padronizada entre componentes utilizando macros de compilação modernas.",
+      "xp": 130,
+      "badge": {
+        "id": "macro_master",
+        "name": "Mestre dos Macros",
+        "icon": "📐",
+        "description": "Declarou props e emits com defineProps e defineEmits"
+      },
+      "question": {
+        "text": "No bloco script setup, é necessário importar defineProps e defineEmits de 'vue'?",
+        "options": [
+          "Não, elas são macros de compilação disponíveis globalmente sem necessidade de importação explícita",
+          "Sim, é obrigatório importar import { defineProps, defineEmits } from 'vue'",
+          "Não, porque elas só existem na versão legado do Vue 2",
+          "Sim, mas devem ser importadas de um arquivo de configuração externo"
+        ],
+        "correctIndex": 0,
+        "tip": "Macros do compilador são processadas na etapa de build do Vue SFC.",
+        "explanation": "defineProps e defineEmits são macros de compilador nativas do script setup, sendo processadas durante a compilação do arquivo .vue sem demandar imports."
+      }
+    },
+    {
+      "id": 29,
+      "index": 29,
+      "title": "Projeto Prático (Aula 01)",
+      "videoId": "XPmZpZNFoh0",
+      "duration": "13:35",
+      "category": "Projeto Prático",
+      "summary": "Início do desenvolvimento de uma aplicação prática completa em Vue 3: setup da base de código, estruturação das páginas e layout principal.",
+      "competency": "Iniciação e planejamento arquitetural de um projeto frontend completo.",
+      "xp": 140,
+      "badge": {
+        "id": "project_starter",
+        "name": "Construtor de Projetos",
+        "icon": "🏗️",
+        "description": "Iniciou o desenvolvimento da aplicação prática completa"
+      },
+      "question": {
+        "text": "Qual é a melhor abordagem para iniciar a arquitetura de um projeto em Vue 3 antes de escrever regras de negócio complexas?",
+        "options": [
+          "Estruturar pastas lógicas (components, views, assets, router) e estabelecer o esqueleto visual do layout",
+          "Escrever todos os estilos CSS em um único arquivo de 5 mil linhas",
+          "Criar todas as requisições de banco sem ter nenhuma tela desenhada",
+          "Instalar dezenas de dependências aleatórias sem avaliar a necessidade"
+        ],
+        "correctIndex": 0,
+        "tip": "Uma base sólida e limpa de diretórios e layout economiza horas de refatoração.",
+        "explanation": "Definir pastas bem organizadas (components, views, router, store) e o esqueleto de layout assegura escalabilidade e fácil divisão de responsabilidades."
+      }
+    },
+    {
+      "id": 30,
+      "index": 30,
+      "title": "Projeto Prático (Aula 02)",
+      "videoId": "V1ad17hlilM",
+      "duration": "17:00",
+      "category": "Projeto Prático",
+      "summary": "Construção de componentes modulares reutilizáveis, cabeçalhos, formulários de entrada de dados e estilização da interface.",
+      "competency": "Desenvolvimento de componentes modulares e estilização responsiva de formulários.",
+      "xp": 140,
+      "badge": {
+        "id": "ui_builder",
+        "name": "Arquiteto de Interface",
+        "icon": "🎨",
+        "description": "Componentizou a interface e formulários do projeto"
+      },
+      "question": {
+        "text": "Ao construir componentes visuais para um projeto, qual critério indica que um bloco da página deve virar um componente isolado?",
+        "options": [
+          "Quando o elemento possui responsabilidade visual/lógica bem definida ou se repete em múltiplos locais",
+          "Apenas quando o elemento possui mais de 1000 linhas de código",
+          "Apenas quando o elemento contém um vídeo do YouTube embutido",
+          "Nunca se deve isolar componentes em projetos Vue"
+        ],
+        "correctIndex": 0,
+        "tip": "Alta coesão, baixo acoplamento e reusabilidade guiam a componentização.",
+        "explanation": "Isolar elementos coesos e reutilizáveis (como cards, botões ou inputs personalizados) facilita a manutenção, testes e legibilidade do código."
+      }
+    },
+    {
+      "id": 31,
+      "index": 31,
+      "title": "Projeto Prático (Aula 03)",
+      "videoId": "1GOPei-tLJU",
+      "duration": "13:17",
+      "category": "Projeto Prático",
+      "summary": "Implementação das regras de negócio do projeto, manipulação dinâmica da lista de itens, validações e reatividade com eventos de interação.",
+      "competency": "Integração de regras de validação e manipulação reativa de coleções no frontend.",
+      "xp": 140,
+      "badge": {
+        "id": "logic_crafter",
+        "name": "Lapidador de Lógica",
+        "icon": "⚙️",
+        "description": "Implementou regras de negócio e manipulação de coleções"
+      },
+      "question": {
+        "text": "Como garantir que a remoção de um item de uma lista reativa atualize a interface imediatamente?",
+        "options": [
+          "Modificando o array reativo utilizando métodos imutáveis (como filter) ou mutáveis nativos (como splice)",
+          "Recarregando a página inteira com location.reload()",
+          "Limpando o cache do navegador manualmente",
+          "Reiniciando o servidor local do Vite"
+        ],
+        "correctIndex": 0,
+        "tip": "O sistema de reatividade do Vue rastreia alterações feitas no array reativo.",
+        "explanation": "O Vue 3 intercepta métodos de array ou novas atribuições via Proxies, disparando a re-renderização imediata dos nós dependentes no DOM."
+      }
+    },
+    {
+      "id": 32,
+      "index": 32,
+      "title": "Projeto Prático (Aula 04)",
+      "videoId": "UHyZ1Qmuxv8",
+      "duration": "15:00",
+      "category": "Projeto Prático",
+      "summary": "Integração do gerenciamento de estado global com a aplicação prática, conectando componentes à store e sincronizando ações do usuário.",
+      "competency": "Conexão de componentes de tela a stores de estado global para persistência de dados em sessão.",
+      "xp": 140,
+      "badge": {
+        "id": "state_integrator",
+        "name": "Integrador de Estado",
+        "icon": "🌐",
+        "description": "Integrou componentes de tela ao fluxo da store global"
+      },
+      "question": {
+        "text": "Qual é a boa prática ao atualizar um dado compartilhado por múltiplos componentes no projeto?",
+        "options": [
+          "Disparar uma ação/mutação na store central para que todos os componentes inscritos recebam a atualização",
+          "Passar o dado por eventos personalizados em 10 componentes em cascata",
+          "Gravar o dado em uma variável global do objeto window",
+          "Duplicar o dado em cada componente individualmente"
+        ],
+        "correctIndex": 0,
+        "tip": "A store centralizada garante integridade e sincronismo automático.",
+        "explanation": "Manter o estado centralizado e atualizá-lo via store assegura que todos os componentes que consomem aquela informação reajam de maneira coordenada."
+      }
+    },
+    {
+      "id": 33,
+      "index": 33,
+      "title": "Projeto Prático (Aula 05)",
+      "videoId": "hrkGv5LKw2k",
+      "duration": "13:49",
+      "category": "Projeto Prático",
+      "summary": "Polimento final da aplicação: transições visuais, tratamento de estados vazios (empty state), persistência local e feedback para o usuário.",
+      "competency": "Refinamento de experiência do usuário (UX), animações e persistência de dados no cliente.",
+      "xp": 150,
+      "badge": {
+        "id": "ux_finisher",
+        "name": "Especialista em UX",
+        "icon": "✨",
+        "description": "Refinou a usabilidade, transições e persistência do projeto"
+      },
+      "question": {
+        "text": "Qual componente embutido do Vue permite aplicar animações CSS de entrada e saída facilmente quando elementos são inseridos ou removidos do DOM?",
+        "options": [
+          "<Transition></Transition>",
+          "<Animate></Animate>",
+          "<Keyframe></Keyframe>",
+          "<Motion></Motion>"
+        ],
+        "correctIndex": 0,
+        "tip": "É o componente canônico nativo do Vue para animações de entrada/saída.",
+        "explanation": "O componente Transition injeta classes automáticas como enter-from, enter-active e leave-to para coordenar animações com CSS puro."
+      }
+    },
+    {
+      "id": 34,
+      "index": 34,
+      "title": "Refatoração com Composition API (Parte 1)",
+      "videoId": "hasFkO37I7I",
+      "duration": "09:05",
+      "category": "Refatoração & Clean Code",
+      "summary": "Migrando o projeto de Options API para a Composition API: conversão de data, methods e computed para ref, reactive e computed no padrão moderno.",
+      "competency": "Modernização de bases de código legadas aplicando refatoração para a Composition API.",
+      "xp": 150,
+      "badge": {
+        "id": "code_refactorer",
+        "name": "Refatorador Pro",
+        "icon": "🧹",
+        "description": "Migrou código de Options API para a sintaxe da Composition API"
+      },
+      "question": {
+        "text": "Ao refatorar métodos da Options API para a Composition API, como eles passam a ser declarados?",
+        "options": [
+          "Como funções JavaScript normais (arrow functions ou functions) dentro do setup() e retornadas ou no script setup",
+          "Como métodos estáticos de uma classe Java",
+          "Como funções anônimas no CSS",
+          "Não é mais permitido criar funções no Vue 3"
+        ],
+        "correctIndex": 0,
+        "tip": "Funções passam a ser cidadãs de primeira classe normais do JavaScript.",
+        "explanation": "Na Composition API, métodos são simplesmente funções declaradas com function ou const fn = () => {}, aproveitando todo o poder nativo da linguagem."
+      }
+    },
+    {
+      "id": 35,
+      "index": 35,
+      "title": "Refatoração com Composition API (Parte 2)",
+      "videoId": "_53wJINWgw8",
+      "duration": "08:59",
+      "category": "Refatoração & Clean Code",
+      "summary": "Conclusão da refatoração: extração de composables customizados (useTodos, useAuth), modularização extrema, revisão final e graduação na trilha Vue 3.",
+      "competency": "Criação de Composables customizados e domínio pleno da arquitetura moderna do Vue.js 3.",
+      "xp": 200,
+      "badge": {
+        "id": "vue3_master",
+        "name": "Mestre Supremo Vue 3",
+        "icon": "👑",
+        "description": "Completou todas as 35 aulas e dominou o Vue 3 moderno"
+      },
+      "question": {
+        "text": "O que é um 'Composable' no ecossistema do Vue 3?",
+        "options": [
+          "Uma função que aproveita a Composition API do Vue para encapsular e reutilizar lógica reativa com estado (ex: useMouse, useFetch)",
+          "Um plugin pago que deve ser comprado na loja oficial do Vue",
+          "Um comando que compila o código diretamente para C++",
+          "Um arquivo de configuração do banco de dados MySQL"
+        ],
+        "correctIndex": 0,
+        "tip": "Convenção com prefixo use que exporta variáveis e funções reativas.",
+        "explanation": "Composables são a forma moderna e idiomática do Vue 3 para compartilhar lógica com estado (stateful logic) entre componentes, substituindo com superioridade os antigos Mixins."
+      }
+    }
+  ]
+};
